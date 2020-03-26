@@ -1,0 +1,122 @@
+
+/* ============ TEXTFIELD COMPONENT CONTAINER ============ */
+.textfield {
+  position: relative;
+  width: 280px;
+  margin-left: 10px;
+}
+
+/* ============ INPUT ELEMENT ============= */
+.textfield__input {
+  padding: 16px 0 0 12px;
+  /* width: 280px; */
+  height: 56px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px 4px 0 0;
+  background-color: rgb(245, 245, 245);
+  border-bottom: 1px solid #999999;
+  transition: all 0.1s ease-out;
+  caret-color: rgb(101, 7, 238);
+  font-family: "Escar", sans-serif;
+  font-size: 16px;
+}
+
+.textfield__input:hover {
+  background-color: rgb(236, 236, 236);
+  border-bottom: 1px solid #383838;
+  cursor: pointer;
+}
+
+.textfield__input:focus {
+  outline: none;
+  border-width: 2px;
+  border-color: rgb(101, 7, 238);
+  background-color: rgb(220, 220, 220);
+  transition: all 0.05s ease-out;
+  cursor: text;
+}
+
+.textfield__input:focus + label {
+  top: 16px;
+  color: rgb(101, 7, 238);
+  font-size: 12px;
+  transition: all 0.1s ease-out;
+}
+
+.textfield__input:focus:hover {
+  border-bottom: solid rgb(101, 7, 238);
+}
+
+.textfield__input--active {
+  border-bottom: 2px solid #727272;
+}
+
+.textfield__input--active:hover {
+  border-bottom: 2px solid #727272;
+}
+
+.textfield__input--textAlignRight {
+  text-align: right;
+  padding-right: 12px;
+}
+
+.textfield__input[disabled] {
+  background-color: rgb(224, 224, 224);
+  border-bottom: none;
+}
+
+.textfield__input[disabled]:hover {
+  background-color: rgb(224, 224, 224);
+  border-bottom: none;
+  cursor: default;
+}
+
+.textfield__input[type=number]::-webkit-inner-spin-button,
+.textfield__input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ============ LABEL ELEMENT ============ */
+.textfield__label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: text;
+  transition: all 0.1s ease-out;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  color: rgb(117, 117, 117);
+  pointer-events: none;
+}
+
+.textfield__label--active {
+  top: 16px;
+  font-size: 12px;
+}
+
+.textfield__label--disabled {
+  color: rgb(150, 150, 150);
+}
+
+
+/* ============ PREFIX ============ */
+.textfield__prefix {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-25%);
+  color: rgb(117, 117, 117);
+}
+
+
+/* ============ SUFFIX ============ */
+.textfield__suffix {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-25%);
+  color: rgb(117, 117, 117);
+}

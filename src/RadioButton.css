@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.radiobuttons input[type="radio"] {
+  width: 0px;
+  height: 0px;
+}
+
+.radiobuttons label p {
+  position: absolute;
+  left: 40px;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+}
+
+.radiobuttons label {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid rgb(96, 96, 96);
+  background-color: white;
+  box-sizing: border-box;
+  margin-right: 120px
+}
+
+.radiobuttons label:hover::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  background-color: rgba(98, 0, 238, 0.2);
+  border-radius: 50%;
+}
+
+.radiobuttons input[type="radio"]:focus + label {
+  outline: black solid 2px;
+}
+
+.radiobuttons input[type="radio"]:checked + label {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid rgb(98, 0, 238);
+  background-color: none;
+  box-sizing: border-box;
+  margin-right: 120px
+}
+
+.radiobuttons input[type="radio"]:checked + label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  background-color: rgb(98, 0, 238);
+  border-radius: 50%;
+}
+
+.radiobuttons input[disabled] + label {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid rgb(224, 224, 224);
+  color: blue;
+  background-color: white;
+  box-sizing: border-box;
+  margin-right: 120px
+}
+
+.radiobuttons input[disabled] + label:hover::after{
+  content: "";
+  display: none;
+}
