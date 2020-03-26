@@ -31,6 +31,24 @@ export default function App() {
           enabled={true}  /* Takes a boolean */
         />
         <TextField
+          label="Price"  /* Takes a string */
+          type="number"   /* Takes a string, all of the JSX input types are valid */
+          width={135}  /* Set pixels in NUMBER or NULL as default */
+          prefix={"$"} /* Takes a string - Leave NULL to disable */
+          suffix={null} /* Takes a string - Leave NULL to disable */
+          cursorToLeft={true} /* Takes a boolean */
+          enabled={true}  /* Takes a boolean */
+        />
+        <TextField
+          label="Price"  /* Takes a string */
+          type="number"   /* Takes a string, all of the JSX input types are valid */
+          width={135}  /* Set pixels in NUMBER or NULL as default */
+          prefix={null} /* Takes a string - Leave NULL to disable */
+          suffix={"Kr"} /* Takes a string - Leave NULL to disable */
+          cursorToLeft={false} /* Takes a boolean */
+          enabled={true}  /* Takes a boolean */
+        />
+        <TextField
           label="Phone"  /* Takes a string */
           type="number"   /* Takes a string, all of the JSX input types are valid */
           width={165}  /* Set pixels in NUMBER or NULL as default */
@@ -40,13 +58,13 @@ export default function App() {
           enabled={true}  /* Takes a boolean */
         />
         <TextField
-          label="Amount"  /* Takes a string */
+          label="Order#"  /* Takes a string */
           type="number"   /* Takes a string, all of the JSX input types are valid */
           width={105}  /* Set pixels in NUMBER or NULL as default */
           prefix={null} /* Takes a string - Leave NULL to disable */
           suffix={"Kr"} /* Takes a string - Leave NULL to disable */
           cursorToLeft={false} /* Takes a boolean */
-          enabled={true}  /* Takes a boolean */
+          enabled={false}  /* Takes a boolean */
         />
       </div>
       <br/>
